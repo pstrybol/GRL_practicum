@@ -1,0 +1,56 @@
+{
+    "mode": "MLT",
+    "save_path": "config_dicts/STRING_Brain_dependencies_drugsensitivity_config.json",
+    "X_train": "train_test/STRING_Brain_dependencies_drugsensitivity_X_train_0.8.h5",
+    "Y_train": "train_test/STRING_Brain_dependencies_drugsensitivity_Y_train_0.8.h5",
+    "X_test": "train_test/STRING_Brain_dependencies_drugsensitivity_X_test_0.8.h5",
+    "Y_test": "train_test/STRING_Brain_dependencies_drugsensitivity_Y_test_0.8.h5",
+    "validation_split": 0.2,
+    "seq_length": 2,
+    "N_nodes": 14687,
+    "model_names": [
+        "STRING",
+        "dependencies"
+    ],
+    "Embedding_dim": 5,
+    "nodes_per_layer": {
+        "STRING": [
+            32,
+            32,
+            1
+        ],
+        "dependencies": [
+            32,
+            32,
+            1
+        ]
+    },
+    "activations_per_layer": {
+        "STRING": [
+            "relu",
+            "relu",
+            "sigmoid"
+        ],
+        "dependencies": [
+            "relu",
+            "relu",
+            "sigmoid"
+        ]
+    },
+    "dropout": 0.2,
+    "epochs": 2,
+    "random_state": 23,
+    "optimizer": "adam",
+    "metrics": "binary_accuracy",
+    "loss": "binary_crossentropy",
+    "custom_loss": null,
+    "merge_method": "hadamard",
+    "verbose": 2,
+    "allow_nans": false,
+    "predefined_embeddings": null,
+    "freeze_embs": null,
+    "model_weights": {
+        "STRING": 4.698651956753608,
+        "dependencies": 3105.590062111801
+    }
+}

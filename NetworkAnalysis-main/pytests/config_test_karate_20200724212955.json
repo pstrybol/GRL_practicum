@@ -1,0 +1,29 @@
+{
+    "model_name": "test_karate",
+    "day": "2020-07-24",
+    "time": "21:29:55.721717",
+    "timestamp": "20200724212955",
+    "saved_name": "test_karate_20200724212955",
+    "N_nodes": 12614,
+    "Embedding_dim": 10,
+    "nodes_per_layer": {
+        "Single_Output_Model": [
+            32,
+            32,
+            1
+        ]
+    },
+    "activations_per_layer": {
+        "Single_Output_Model": [
+            "relu",
+            "relu",
+            "sigmoid"
+        ]
+    },
+    "merge_method": "weighted_l1",
+    "seq_length": 2,
+    "random_state": 42,
+    "model_file": "weights_test_karate_20200724212955.h5",
+    "gene_dict_file": "genedict_test_karate_20200724212955.json",
+    "config_file": "config_test_karate_20200724212955.json"
+}
